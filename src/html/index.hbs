@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang='en' data-version='{{timestamp}}'>
+
+<head>
+
+	{{> base/meta}}
+
+	<!-- smoosh -->
+	<link rel='stylesheet' href='bundle.css' />
+	<!-- endsmoosh -->
+
+
+	<!-- smoosh -->
+	<script src='critical.js'></script>
+	<!-- endsmoosh -->
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> {{> base/analytics }}
+
+</head>
+
+<body>
+
+	<main id='content'>
+		{{> story/map}}
+	</main>
+
+
+	<script src='{{basepath}}assets/scripts/d3.v4.10.2+jetpack.min.js'></script>
+	<script src='bundle.js?version={{timestamp}}' async></script>
+</body>
+
+</html>
